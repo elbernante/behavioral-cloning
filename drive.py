@@ -30,11 +30,12 @@ prev_image_array = None
 SPEED_LIMIT = 23.
 
 def process_image(img):
-    # img = img[40:, ...]
-    img = cv2.cvtColor(img, cv2.COLOR_RGB2YUV)[:,:,0]
-    img = cv2.resize(img, (64, 32), interpolation=cv2.INTER_AREA).astype(np.float32)
-    img = (img / 127.5) - 1.
-    return img[:,:,None]
+    img = img[60:140,...]
+    # img = cv2.cvtColor(img, cv2.COLOR_RGB2YUV)[:,:,0]
+    img = cv2.resize(img, (32, 32), interpolation=cv2.INTER_AREA).astype(np.float32)
+    # img = (img / 127.5) - 1.
+    # return img[:,:,None]
+    return (img / 127.5) - 1.
 
 
 @sio.on('telemetry')
