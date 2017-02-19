@@ -20,7 +20,7 @@ To add more data, the images are flipped horizontally and the sing of the corres
 
 It would only require the images of the road to train. Unnecessary information is minimized by cropping the images by cropping 60 pixels from the top, to remove the anything above the horizon, and 20 pixels from the bottom, to remove the visible dashboard. The image is then resized to 32x32 pixels to be compatible with the model.
 
-See ![img_22.jpg](https://github.com/elbernante/behavioral-cloning/blob/master/images/img_22.jpg "Sample Preprocessed Image 1") and ![img_23.jpg](https://github.com/elbernante/behavioral-cloning/blob/master/images/img_23.jpg "Sample Preprocessed Image 2") for samples of processed images.
+See ![img_22.jpg](https://github.com/elbernante/behavioral-cloning/blob/master/images/img_22.jpg "img_22.jpg") and ![img_23.jpg](https://github.com/elbernante/behavioral-cloning/blob/master/images/img_23.jpg "img_23.jpg") for samples of processed images.
 
 During training, the dataset will be 0 centered and normalized to have a range between -1 and 1. This will help the learning process to converge better.
 
@@ -51,14 +51,13 @@ The output layer is a dense layer with linear activation, which would spit out t
 Images for training were collected as described in “Collecting Data” section. Additionally, more images were collected that simulates when the car runs off track and adjust the steering angle accordingly to recover to the middle lane. This is done so by deliberately making the car go off-lane and then going back to the middle of the lane. However, only the images when the car was recovering to be back on track were recorded. The part were the car was running off-track were not recorded. This is done so to prevent the model from learning to wander off track, but allow the model to learn on how to recover back on-track.
 
 Some of the recorded images can be seen here:
-![center_2016_12_01_13_32_52_350.jpg](https://github.com/elbernante/behavioral-cloning/blob/master/images/center_2016_12_01_13_32_52_350.jpg "Sample Image 1")
 
+![center_2016_12_01_13_32_52_350.jpg](https://github.com/elbernante/behavioral-cloning/blob/master/images/center_2016_12_01_13_32_52_350.jpg "Sample Image 1")
 ![center_2016_12_01_13_34_20_804.jpg](https://github.com/elbernante/behavioral-cloning/blob/master/images/center_2016_12_01_13_34_20_804.jpg "Sample Image 2")
 
 The images were then preprocessed to be compatible with our model (See “Preprocessing” section for more details). Some of the preprocessed images can be seen here:
 
 ![img_22.jpg](https://github.com/elbernante/behavioral-cloning/blob/master/images/img_22.jpg "Sample Preprocessed Image 1")
-
 ![img_23.jpg](https://github.com/elbernante/behavioral-cloning/blob/master/images/img_23.jpg "Sample Preprocessed Image 2")
 
 
