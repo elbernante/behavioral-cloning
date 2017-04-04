@@ -52,7 +52,7 @@ Images for training were collected as described in “Collecting Data” section
 
 Some of the recorded images can be seen here:
 
-![center_2016_12_01_13_32_52_350.jpg](https://github.com/elbernante/behavioral-cloning/blob/master/images/center_2016_12_01_13_32_52_350.jpg "Sample Image 1")
+![center_2016_12_01_13_32_52_350.jpg](http://github.com/elbernante/behavioral-cloning/blob/master/images/center_2016_12_01_13_32_52_350.jpg "Sample Image 1")
 ![center_2016_12_01_13_34_20_804.jpg](https://github.com/elbernante/behavioral-cloning/blob/master/images/center_2016_12_01_13_34_20_804.jpg "Sample Image 2")
 
 The images were then preprocessed to be compatible with our model (See “Preprocessing” section for more details). Some of the preprocessed images can be seen here:
